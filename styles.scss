@@ -1,2 +1,36 @@
 @import url(/node_modules/bootstrap/scss/bootstrap.scss);
+// HTML
+html, body {
+    width: 100%;
+    height: 100%;
+}
+// HEADER
+header {
+    padding: 2em;
+    background-color: rgba(0, 0, 0, 0.282);
+    margin-bottom: 1.5em;
+    height: 10em;
+}
+// MAIN
+main {
+    width: 100%;
+    min-height: calc(100vh - 23em);
+    margin-bottom: 1.5em;
+
+}
+
+    .aside {
+        border: 1px solid red;
+        }
+    .content {
+        border: 1px solid red;
+    }
+
+// FOOTER
+footer {
+    background-color: rgba(0, 0, 0, 0.282);
+    height: 10em;
+    width: 100%;
+
+}
 
