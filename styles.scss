@@ -7,19 +7,42 @@ html, body {
 }
 // HEADER
 header {
-    padding: 2em;
+    padding: 1em;
     background-color: rgba(0, 0, 0, 0.300);
     margin-bottom: 1.5em;
-    height: 10em;
-    text-align: center;
-    justify-content: center;
+    height: 7em;
+    display: flex;
+    justify-content: space-between;
 }
+.headercel {
+    display: none;    
+}
+.headerweb {
+    display: none;
+}
+.cel {
+    display: none;
+}
+.iconsweb {
+    display: none;
+}
+.iconscel {
+    display: none;
+}
+.titweb {
+    padding-left: 1em;
+    font-size: 2em !important;
+}
+.subtitweb {
+    padding-left: 1em;
+    font-size: 2em !important;
+}
+
 // MAIN
 main {
     width: 100%;
-    min-height: calc(100vh - 23em);
+    min-height: calc(100vh - 20em);
     margin-bottom: 1.5em;
-
 }
 
     .aside {
@@ -34,6 +57,66 @@ footer {
     background-color: rgba(0, 0, 0, 0.300);
     height: 10em;
     width: 100%;
-
 }
 
+
+//MEDIA QUERY
+// WEB
+@media (min-width: 600px) {
+    .headerweb {
+        visibility: visible;
+        display: flex;
+        flex-direction: row;
+        padding-top: 0.7em;
+    }
+    .titweb {
+        font-size: 3em !important;
+        font-family: 'Bebas Neue', cursive !important;
+    }
+    .subtitweb {
+        font-size: 3em !important;
+        font-family: 'Bebas Neue', cursive !important;
+    }
+    .iconsweb {
+        padding-right: 4em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+        .icon img {
+            width: 90px;
+            padding-right: 40%;
+        }
+}
+// CEL
+@media (max-width: 600px) {
+    .cel {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .headercel {
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+    }
+    .titcel {
+        font-size: 1.7em !important;
+        font-family: 'Bebas Neue', cursive !important;
+    }
+    .subtitcel {
+        font-size: 1.7em !important;
+        font-family: 'Bebas Neue', cursive !important;
+    }
+    .iconscel {
+        padding-left: 2em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+        .icon img {
+            width: 55px;
+            padding-right: 40%;
+        }
+}
