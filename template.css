@@ -42,6 +42,10 @@ header {
   justify-content: flex-end;
 }
 
+.boton {
+  font-size: 1em;
+}
+
 .icon img {
   width: 90px;
   padding-right: 40%;
@@ -72,12 +76,16 @@ footer {
   width: 100%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   header {
     height: 7em;
   }
+  .w {
+    flex-direction: column;
+  }
   .title {
     text-align: center;
+    width: 100%;
   }
   .tit {
     font-size: 2em;
