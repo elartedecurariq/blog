@@ -51,14 +51,6 @@ header {
   margin-top: 2.5em;
 }
 
-.aside {
-  border: 1px solid red;
-}
-
-.content {
-  border: 1px solid red;
-}
-
 footer {
   background-color: rgba(0, 0, 0, 0.3);
   height: 10em;
@@ -93,6 +85,9 @@ footer {
 }
 
 @media (max-width: 600px) {
+  header {
+    margin-bottom: 0.5em;
+  }
   .cel {
     display: flex;
     flex-direction: row;
@@ -122,8 +117,21 @@ footer {
     width: 55px;
     padding-right: 40%;
   }
+  .main {
+    width: 100%;
+    min-height: calc(100vh - 21em);
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+  }
+  .row {
+    width: 100% !important;
+  }
+  .coll {
+    width: 100%;
+  }
   .cuerpo {
-    padding-left: 1.0em;
+    margin: 0;
+    flex-direction: column;
   }
 }
 /*# sourceMappingURL=styles.css.map */
