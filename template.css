@@ -3,35 +3,108 @@ html, body {
   width: 100%;
   height: 100%;
   background-image: url(assets/bg2.png);
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 header {
   padding: 1em;
   background-color: rgba(0, 0, 0, 0.3);
   margin-bottom: 1.5em;
-  height: 7em;
+  width: 100%;
+  height: 5em;
   display: flex;
   justify-content: space-between;
 }
 
+.w {
+  display: flex !important;
+  justify-content: space-between !important;
+  flex-direction: row;
+}
+
+.tit {
+  font-size: 3em;
+  font-family: 'Bebas Neue', cursive !important;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.iconsweb {
+  padding-right: 4em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.icon img {
+  width: 90px;
+  padding-right: 40%;
+}
+
 .main {
   width: 100%;
-  min-height: calc(100vh - 21em);
+  min-height: calc(100vh - 18em);
   margin-bottom: 1.5em;
-  margin-top: 2.5em;
+  margin-top: 1.5em;
 }
 
-.aside {
-  border: 1px solid red;
+.subtit {
+  padding-bottom: 1em;
 }
 
-.content {
-  border: 1px solid red;
+.accordion-item {
+  background-color: rgba(0, 0, 0, 0.15) !important;
+}
+
+.accordion-button {
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 
 footer {
   background-color: rgba(0, 0, 0, 0.3);
   height: 10em;
   width: 100%;
+}
+
+@media (max-width: 600px) {
+  header {
+    height: 7em;
+  }
+  .title {
+    text-align: center;
+  }
+  .tit {
+    font-size: 2em;
+  }
+  .buttons {
+    margin: 0;
+    padding: 0;
+  }
+  .btn-lg {
+    font-size: 0.7em;
+    margin: 0.2em;
+  }
+  .redes {
+    display: none;
+  }
+  .main {
+    margin-top: 1.5em;
+  }
+  .mainn {
+    flex-direction: column !important;
+  }
+  .aside {
+    width: 100%;
+  }
+  .content {
+    width: 100%;
+    padding-top: 1.5em;
+  }
 }
 /*# sourceMappingURL=template.css.map */
