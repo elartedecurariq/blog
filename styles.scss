@@ -39,13 +39,12 @@ header {
 }
 
 // MAIN
-main {
+.main {
     width: 100%;
     min-height: calc(100vh - 21em);
     margin-bottom: 1.5em;
     margin-top: 2.5em;
 }
-
     .aside {
         border: 1px solid red;
         }
@@ -120,4 +119,8 @@ footer {
             width: 55px;
             padding-right: 40%;
         }
+
+        .cuerpo {
+            padding-left: 1.0em;
+        } 
 }

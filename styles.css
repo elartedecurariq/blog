@@ -44,7 +44,7 @@ header {
   font-size: 2em !important;
 }
 
-main {
+.main {
   width: 100%;
   min-height: calc(100vh - 21em);
   margin-bottom: 1.5em;
@@ -121,6 +121,9 @@ footer {
   .icon img {
     width: 55px;
     padding-right: 40%;
+  }
+  .cuerpo {
+    padding-left: 1.0em;
   }
 }
 /*# sourceMappingURL=styles.css.map */
