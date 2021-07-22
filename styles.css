@@ -46,8 +46,9 @@ header {
 
 main {
   width: 100%;
-  min-height: calc(100vh - 20em);
+  min-height: calc(100vh - 33em);
   margin-bottom: 1.5em;
+  margin-top: 10em;
 }
 
 .aside {
