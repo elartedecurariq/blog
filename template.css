@@ -62,6 +62,10 @@ header {
   padding-bottom: 1em;
 }
 
+.content .subcont {
+  margin-bottom: 3em;
+}
+
 .content .areasqx {
   list-style-type: none;
 }
